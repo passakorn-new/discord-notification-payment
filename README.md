@@ -1,6 +1,6 @@
 # discord-notification-payment
 
-I used database firestore, deployed google cloud function and use cloud schuduler for tricker cronjob
+I used database firestore, deployed google cloud function and use cloud schuduler for trigger cronjob
 
 .env
 GOOGLE_APPLICATION_CREDENTIALS=PATH_TO_SERVICE_KEY
