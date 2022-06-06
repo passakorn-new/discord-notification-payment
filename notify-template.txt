@@ -1,0 +1,10 @@
+{{.Product.Name}} ถึงวันชำระเงิน {{.CurrentDate}}
+ราคาคนละ {{.PricePerPerson}} บาท
+
+บุคคลที่มีรายชื่อต่อไปนี้กรุณาจ่ายเงิน
+
+{{range .Members}}
+    {{.Name}} {{if .DiscordId}} <@!{{.DiscordId}}> {{end}}
+{{end}}
+
+{{if .Owner.PaymentImageLink}} {{.Owner.PaymentImageLink}} {{end}}
